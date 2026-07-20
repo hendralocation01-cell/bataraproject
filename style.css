@@ -1,4 +1,4 @@
-/* RESET DASAR */
+/* RESET & DASAR */
 * {
     margin: 0;
     padding: 0;
@@ -7,154 +7,215 @@
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #222;
+    padding-bottom: 40px;
 }
 
-/* NAVBAR / HEADER STYLING */
-.navbar {
+/* HEADER & LOGO */
+.header {
     background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #0056b3;
-}
-
-.logo-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1a1a1a;
-}
-
-.logo-text span {
-    color: #0056b3;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #0056b3;
-}
-
-.btn-cta {
-    background-color: #0056b3;
-    color: white !important;
-    padding: 8px 18px;
-    border-radius: 6px;
-    transition: background 0.3s;
-}
-
-.btn-cta:hover {
-    background-color: #004085;
-}
-
-/* HERO SECTION STYLING */
-.hero {
-    padding: 140px 20px 80px 20px;
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 20px 15px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
 }
 
-.hero-content {
-    max-width: 800px;
+.logo-container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 12px auto;
+}
+
+.logo-panjang {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #555;
+    max-width: 400px;
     margin: 0 auto;
+    line-height: 1.4;
+    font-weight: 500;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-    line-height: 1.2;
+/* CONTAINER UTAMA */
+.main-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.hero .highlight {
-    color: #0056b3;
+/* SECTION STYLING */
+.section {
+    margin-bottom: 25px;
 }
 
-.hero p {
+.section-title {
     font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 30px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-.hero-buttons {
+/* GRID PAKET */
+.paket-grid {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
 }
 
-.btn-primary {
-    background-color: #0056b3;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
-    transition: transform 0.2s;
+/* KARTU / CARD */
+.card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
 }
 
-.btn-secondary {
-    background-color: white;
+.card.featured {
+    border-color: #0056b3;
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+/* LIST FITUR */
+.features {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.features li {
+    font-size: 0.9rem;
+    color: #444;
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+    font-weight: 500;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+/* HARGA */
+.price {
+    font-size: 1.4rem;
+    font-weight: 800;
     color: #0056b3;
-    padding: 12px 25px;
-    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* TOMBOL WHATSAPP */
+.btn-wa {
+    display: block;
+    width: 100%;
+    background-color: #25d366;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
-    border: 1px solid #0056b3;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
     transition: background 0.2s;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-    transform: translateY(-2px);
+.btn-wa:hover {
+    background-color: #20ba5a;
 }
 
-/* RESPONSIF UNTUK HP */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Sederhanakan untuk tampilan mobile awal */
+/* SINGLE CARD STYLING */
+.single-card {
+    text-align: center;
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: #0056b3;
+}
+
+/* BADGE */
+.badge-populer {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #6c757d;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.badge-populer.best {
+    background: #0056b3;
+}
+
+/* KREASI TAMBAHAN */
+.benefit-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #0056b3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.benefit-item h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.benefit-item p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.sub-footer {
+    font-size: 0.75rem;
+    color: #0056b3;
+    font-weight: 600;
+    margin-top: 4px;
     }
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-  }
-  
+    
